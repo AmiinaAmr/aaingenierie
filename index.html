@@ -63,30 +63,71 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
   </div>
 
   <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-theme w3-padding">LA FIABILITÉ</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-theme w3-padding">L’OPTIMISATION</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-theme w3-padding">LA RÉACTIVITÉ</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-theme w3-padding">PRATIQUE </div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+    
+          <div class="ft-accordion">
+            <input type="checkbox" name="ft-accord-group-1" id="ft-accord-1" checked>
+            <label for="ft-accord-1"><span><i class="material-icons">keyboard_arrow_down</i></span>
+              <h5>Open accordion</h5>
+            </label>
+    
+            <div class="ft-accord-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Lorem ipsum dolor sit amet. </p>
+            </div>
+          </div>
+    
+          <div class="ft-accordion">
+            <input type="checkbox" name="ft-accord-group-1" id="ft-accord-2">
+            <label for="ft-accord-2"><span><i class="material-icons">keyboard_arrow_down</i></span>
+              <h5>Example accordion</h5>
+            </label>
+    
+            <div class="ft-accord-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
+            </div>
+          </div>
+    
+          <div class="ft-accordion">
+            <input type="checkbox" name="ft-accord-group-1" id="ft-accord-3">
+            <label for="ft-accord-3"><span><i class="material-icons">keyboard_arrow_down</i></span>
+              <h5>Example accordion</h5>
+            </label>
+    
+            <div class="ft-accord-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. </p>
+            </div>
+          </div>
+    
+          <div class="ft-accordion">
+            <input type="checkbox" name="ft-accord-group-1" id="ft-accord-4">
+            <label for="ft-accord-4"><span><i class="material-icons">keyboard_arrow_down</i></span>
+              <h5>Example accordion</h5>
+            </label>
+    
+            <div class="ft-accord-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat.</p>
+            </div>
+          </div>
+    
+        </div><!-- end of .col-lg-5 -->
+      </div><!-- end of .row -->
+    </div><!-- end of .container -->
+    
   </div>
 
 
@@ -103,7 +144,7 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <img src="img/team_pic2.jpg" alt="BELAISSOAUI MOUATEZ" style="width:100%">
       <h3>BELAISSAOUI Mouatez</h3>
-      <p class="w3-opacity">CEO & Directeur</p>
+      <p class="w3-opacity">Directeur</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
       <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
     </div>
@@ -146,7 +187,12 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
 
 
 </footer>
-
+ <!-- Charge React -->
+  <!-- Remarque : pour le déploiement, remplacez "development.js"
+       par "production.min.js" -->
+       <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+       <!-- Charge notre composant React -->
+       <script src="react.js"></script>
 </body>
 </html>
 
