@@ -27,6 +27,42 @@
 .w3-hover-theme:hover {color:#fff !important; background-color:#0e2030 !important}
 .w3-hover-text-theme:hover {color:#0e2030 !important}
 .w3-hover-border-theme:hover {border-color:#0e2030 !important}
+
+input {
+    display: none;
+}
+
+label {
+    display: block;    
+    padding: 8px 22px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    background: #0e2030;
+    border-radius: 3px;
+    color: #FFF;
+    transition: ease .5s;
+}
+
+label:hover {
+    background: #0e2030;
+}
+
+.content {
+    background: #E2E5F6;
+    padding: 10px 25px;
+    border: 1px solid #A7A7A7;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+}
+
+input + label + .content {
+    display: none;
+}
+
+input:checked + label + .content {
+    display: block;
+}
+
 </style>  
   
 <body>
@@ -39,7 +75,7 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
 </a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-text-theme w3-hide-small  w3-wide w3-padding  ">
-      <a href="#projects" class="w3-bar-item w3-button">Services</a>
+      <a href="#services" class="w3-bar-item w3-button">Services</a>
       <a href="#about" class="w3-bar-item w3-button">A propos</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
@@ -58,75 +94,36 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
 
  
   <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
+  <div class="w3-container w3-padding-32" id="services">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Nos services</h3>
   </div>
 
   <div class="w3-row-padding">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-5">
-    
-          <div class="ft-accordion">
-            <input type="checkbox" name="ft-accord-group-1" id="ft-accord-1" checked>
-            <label for="ft-accord-1"><span><i class="material-icons">keyboard_arrow_down</i></span>
-              <h5>Open accordion</h5>
-            </label>
-    
-            <div class="ft-accord-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat.</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Lorem ipsum dolor sit amet. </p>
-            </div>
-          </div>
-    
-          <div class="ft-accordion">
-            <input type="checkbox" name="ft-accord-group-1" id="ft-accord-2">
-            <label for="ft-accord-2"><span><i class="material-icons">keyboard_arrow_down</i></span>
-              <h5>Example accordion</h5>
-            </label>
-    
-            <div class="ft-accord-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat.</p>
-            </div>
-          </div>
-    
-          <div class="ft-accordion">
-            <input type="checkbox" name="ft-accord-group-1" id="ft-accord-3">
-            <label for="ft-accord-3"><span><i class="material-icons">keyboard_arrow_down</i></span>
-              <h5>Example accordion</h5>
-            </label>
-    
-            <div class="ft-accord-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat.</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. </p>
-            </div>
-          </div>
-    
-          <div class="ft-accordion">
-            <input type="checkbox" name="ft-accord-group-1" id="ft-accord-4">
-            <label for="ft-accord-4"><span><i class="material-icons">keyboard_arrow_down</i></span>
-              <h5>Example accordion</h5>
-            </label>
-    
-            <div class="ft-accord-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo consequat.</p>
-            </div>
-          </div>
-    
-        </div><!-- end of .col-lg-5 -->
-      </div><!-- end of .row -->
-    </div><!-- end of .container -->
+   
+<input type="checkbox" id="service1" />
+<label for="service1">Ouverture dans mur porteur</label>
+
+<div class="content">
+<p>The description of the service goes here.</p>
+</div>
+<input type="checkbox" id="service2" />
+<label for="service2">Dimensionnement de poutres métalliques</label>
+
+<div class="content">
+<p>The description of the service goes here.</p>
+</div>
+<input type="checkbox" id="service3" />
+<label for="service3">Calcul de structures</label>
+
+<div class="content">
+<p>(solives, trémie, poutrelles)</p>
+</div>
+<input type="checkbox" id="service4" />
+<label for="service4">Etude de faisabilité</label>
+
+<div class="content">
+<p>The description of the service goes here.</p>
+</div>
     
   </div>
 
@@ -187,12 +184,7 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
 
 
 </footer>
- <!-- Charge React -->
-  <!-- Remarque : pour le déploiement, remplacez "development.js"
-       par "production.min.js" -->
-       <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-       <!-- Charge notre composant React -->
-       <script src="react.js"></script>
+ 
 </body>
 </html>
 
