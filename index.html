@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
     <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/steps-progressbar.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -53,9 +54,9 @@
                         </div>
                         <div class="carousel-item">
                             <div class="jumbotron pulse animated hero-photography carousel-hero" style="/*filter: blur(2px);*/">
-                                <h1 class="hero-title" style="text-shadow: -4px -4px 4px #0E2030;border-style: none;"><strong>Hero Photography</strong></h1>
+                                <h1 class="hero-title" style="text-shadow: -4px -4px 4px #0E2030;border-style: none;">Le spécialiste du diagnostic structurel<br></h1>
                                 <p class="hero-subtitle" style="text-shadow: 6px 0px 14px #0e2030;"><strong>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</strong></p>
-                                <p><a class="btn btn-primary hero-button plat" role="button" href="#">En Savoir Plus</a></p>
+                                <p></p>
                             </div>
                         </div>
                         <div class="carousel-item active">
@@ -147,29 +148,40 @@
     </section>
     <div class="highlight-blue" style="background: #0e2030;">
         <div class="container">
+            <ul class="list-group"></ul>
             <div class="intro">
-                <h2 class="text-center">ÉTUDIONS ensemble votre projet !</h2>
-                <p class="text-center">Faites part de votre projet à notre équipe d’experts et profitez d'un Devis Gratuit Dés maintenant&nbsp;<br></p>
+                <h2 class="text-center" style="height: 72px;"><strong>ÉTUDIONS ensemble votre projet !</strong></h2>
+                <div class="row">
+                    <div class="col" style="border-color: rgba(255,255,255,0);height: 160px;width: 546px;">
+                        <ul class="progressbar w-100">
+                            <li class="text-monospace active" style="width: 111px;border-width: 19px;border-color: #048f83;border-radius: 19px;"><strong> Analyse de votre besoin&nbsp; et devis</strong></li>
+                            <li class="text-monospace text-center active" style="height: 64px;"><strong>Intervention&nbsp; sur site</strong></li>
+                            <li class="text-monospace active"><strong>Etude structurelle&nbsp; &nbsp;et préconisations</strong></li>
+                            <li class="text-monospace active" style="width: 114px;"><strong>Présentation des résultats et rendu</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="lead text-center" style="height: 228px;">Faites part de votre projet à notre équipe d’experts et profitez d'un Devis <strong>Gratuit</strong> Dés maintenant.&nbsp; Contactez nous pour toutes questions ou demande de devis. <strong>Réponse garantie</strong> sous 48h.<br>Vous pouvez également nous contacter via le formulaire&nbsp; ci- dessous.<br></p>
             </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="#contact" style="background: #048f83;">Demander un devis Gratuit</a></div>
+            <div class="buttons" style="height: 71px;width: 1168px;"><a class="btn btn-primary" role="button" href="#contact" style="background: #048f83;">Demander un devis Gratuit</a></div>
         </div>
     </div>
     <div id="contact" class="contact-clean">
         <form class="text-center" data-aos="fade" data-aos-once="true" method="post" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeBW6xS0WKj67st8NQOEuolvZaGnikcSwsJUvQmTuh6uS1CzQ/formResponse">
-            <h2 class="text-center">Contact us</h2>
-            <div class="form-group"><input class="form-control" type="text" name="entry.1357763891" placeholder="Nom complet" autocomplete="on"></div>
-            <div class="form-group"><input class="form-control is-invalid" type="email" name="entry.1501501391" placeholder="Email" inputmode="email" autocomplete="on"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+            <h2 class="text-center">Contact</h2>
+            <div class="form-group"><input class="form-control" type="text" name="entry.1357763891" placeholder="Nom complet" autocomplete="on" required=""></div>
+            <div class="form-group"><input class="form-control is-invalid" type="email" name="entry.1501501391" placeholder="Email" inputmode="email" autocomplete="on" required=""></div>
             <div class="form-group"><input class="form-control" type="text" name="entry.790455722" placeholder="Numero de Téléphone" style="border-width: 1px;" pattern="[0][0-9]{9}" autocomplete="on" inputmode="tel"></div>
             <div class="form-group"><input class="form-control" type="text" name="entry.1395858425" placeholder="Adress" autocomplete="on"><input class="form-control" type="text" name="entry.1020901793" placeholder="Code postale" style="width: 130px;"></div>
             <div class="form-group"><textarea class="form-control" name="entry.2025913356" placeholder="Message" rows="14" spellcheck="true" style="height: 201px;"></textarea></div>
-            <div class="form-group"><button class="btn btn-primary" type="submit" style="background: #048f83;">Envoyer</button></div>
+            <div class="form-group"><button class="btn btn-primary" type="submit" style="background: var(--danger);">Envoyer</button></div>
         </form>
     </div>
     <div class="footer-dark" style="background: #0e2030;">
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col item social"><a href="#"><i class="icon ion-ios-location-outline"></i></a><a href="#"><i class="icon ion-ios-telephone-outline"></i></a><a href="#"><i class="icon ion-ios-email-outline"></i></a><a href="#"><i class="icon ion-social-linkedin-outline"></i></a></div>
+                    <div class="col item social"><a href="https://goo.gl/maps/CYMGkGAh8bdbcTbX7"><i class="icon ion-ios-location-outline"></i></a><a href="#"><i class="icon ion-ios-telephone-outline"></i></a><a href="mailto:contact@aaingenierie.fr"><i class="icon ion-ios-email-outline"></i></a><a href="#"><i class="icon ion-social-linkedin-outline"></i></a></div>
                 </div>
                 <p class="copyright">A&amp;A Ingenierie © 2021</p>
             </div>

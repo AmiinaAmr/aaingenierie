@@ -76,15 +76,17 @@
 
 .contact-clean form .btn:hover {
   opacity: 1;
+  background: #0e2030;
 }
 
 .contact-clean form .btn:active {
   transform: translateY(1px);
+  background: #048f83;
 }
 
 .contact-clean form .btn-primary {
-  background-color: #055ada !important;
   margin-top: 15px;
   color: #fff;
+  background: #048f83;
 }
 
