@@ -145,7 +145,7 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">ÉTUDIONS ensemble votre projet !</h3>
     <h6>Faites part de votre projet à notre équipe d’experts </h6> 
 
-    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeBW6xS0WKj67st8NQOEuolvZaGnikcSwsJUvQmTuh6uS1CzQ/formResponse?"  target="hidden_iframe" onsubmit="submitted=true;">
+    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeBW6xS0WKj67st8NQOEuolvZaGnikcSwsJUvQmTuh6uS1CzQ/formResponse?" method="post" target="hidden_iframe" onsubmit="submitted=true;">
       <input class="w3-input w3-border" type="text" placeholder="Nom complet" required name="Nom" id="entry.1357763891">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="entry.1501501391" id="entry.1501501391">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Sujet" required name="entry.790455722" id= "entry.790455722">
@@ -156,13 +156,12 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
     </form>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
     <script src="assets/js/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
+     <script type="text/javascript">var submitted=false;</script>
+      <script type="text/javascript">
+     $('#gform').on('submit', function(e) {
+      $('#gform *').fadeOut(2000);
+      $('#gform').prepend('Your submission has been processed...'); });
+      </script>
   </div>
   
 <!-- Image of location/map -->
