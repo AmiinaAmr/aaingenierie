@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b52f9c90ca654d322da0bde409f7e84fd812b35
 $errors = [];
 $errorMessage = '';
 
