@@ -63,7 +63,12 @@ input + label + .content {
 input:checked + label + .content {
     display: block;
 }
-
+.column {
+  float: left;
+  width: 45%;
+  padding: 20px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
 </style>  
   
 <body>
@@ -142,7 +147,7 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact"> 
-    <div class="w3-column">
+    <div class="column">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">ÉTUDIONS ensemble votre projet !</h3>
     <h4>Faites part de votre projet à notre équipe d’experts et profitez d'un devis GRATUIT !
       <br/> Vous pouvez également nous contacter via le formulaire ci-contre. Réponse garantie sous 48H.
@@ -154,7 +159,7 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
       <p >Tel:+33781686329</p>
   </div>
 
-  <div class="w3-column">
+  <div class="column">
     <form name="mG61Hd" id="mG61Hd"  action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeBW6xS0WKj67st8NQOEuolvZaGnikcSwsJUvQmTuh6uS1CzQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
       <input class="w3-input w3-border" type="text" placeholder="Nom complet" required name="entry.1357763891" >
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="entry.1501501391" >
