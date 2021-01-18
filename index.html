@@ -145,15 +145,16 @@ height: 150px;margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px;">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">ÉTUDIONS ensemble votre projet !</h3>
     <h6>Faites part de votre projet à notre équipe d’experts </h6> 
 
-    <form action="action_page.php" method="POST">
-      <input class="w3-input w3-border" type="text" placeholder="Nom" required name="Nom">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Sujet" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Description" required name="Comment">
+    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeBW6xS0WKj67st8NQOEuolvZaGnikcSwsJUvQmTuh6uS1CzQ/formResponse?usp=sf_link"  target="hidden_iframe" onsubmit="submitted=true;">
+      <input class="w3-input w3-border" type="text" placeholder="Nom complet" required name="Nom" id="entry.1357763891">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email" id="entry.1501501391">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Sujet" required name="Sujet" id= "entry.790455722">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Description" required name="Description" id="entry.2025913356" >
       <button class="w3-button w3-theme-action w3-section" type="submit">
         <i class="fa fa-paper-plane"></i> Devis GRATUIT !
       </button>
     </form>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
   </div>
   
 <!-- Image of location/map -->
