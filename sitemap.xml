@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://aaingenierie.fr/blog.html</loc>
+        <loc>/blog.html</loc>
     </url>
     <url>
-        <loc>https://aaingenierie.fr/formulaire.html</loc>
+        <loc>/formulaire.html</loc>
     </url>
     <url>
-        <loc>https://aaingenierie.fr/index.html</loc>
+        <loc>/index.html</loc>
     </url>
     <url>
-        <loc>https://aaingenierie.fr/mur-porteur.html</loc>
+        <loc>/mur-porteur.html</loc>
     </url>
 </urlset>
